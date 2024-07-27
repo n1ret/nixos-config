@@ -35,12 +35,12 @@
       format = "[$ssh_symbol$hostname]($style) ";
     };
     git_status = {
-      ahead = "⇡$count";
-      diverged = "⇡$ahead_count⇣$behind_count";
-      behind = "⇣$count";
-      untracked = "[?$count](red)";
-      modified = "[!$count](yellow)";
-      staged = "[+$count](yellow)";
+      ahead = "⇡$count ";
+      diverged = "⇡$ahead_count⇣$behind_count ";
+      behind = "⇣$count ";
+      untracked = "[?$count](red) ";
+      modified = "[!$count](yellow) ";
+      staged = "[+$count](yellow) ";
       renamed = "";
       deleted = "";
       style = "bold green";

@@ -6,7 +6,8 @@ let
   src = ./config;
 }; in {
   environment.systemPackages = with pkgs; [
-    xclip luajitPackages.luarocks
+    xclip
+    luajitPackages.luarocks lua51Packages.lua luajit
   ];
   programs.nano.enable = false;
   programs.neovim = {

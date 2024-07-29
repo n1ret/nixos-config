@@ -17,6 +17,7 @@ key=(
   Enter "^M"
 
   Tab "${terminfo[ht]}"
+  ShiftTab "${terminfo[cbt]}"
 
   Home "${terminfo[khome]}"
   End "${terminfo[kend]}"
@@ -70,6 +71,7 @@ bind "$key[PageUP]" history-beginning-search-backward
 bind "$key[PageDOWN]" history-beginning-search-forward
 
 bind "$key[Tab]" expand-or-complete
+bind "$key[ShiftTab]" reverse-menu-complete
 
 # Common keys
 bind "$key[Enter]" accept-line

@@ -8,6 +8,8 @@ let
   environment.systemPackages = with pkgs; [
     xclip
     luajitPackages.luarocks lua51Packages.lua luajit
+    ripgrep
+    gcc
   ];
   programs.nano.enable = false;
   programs.neovim = {

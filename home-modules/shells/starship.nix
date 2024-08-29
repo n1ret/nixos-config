@@ -25,7 +25,8 @@
 
     username = {
       show_always = true;
-
+      
+      style_user = "bold green";
       format = "[$user]($style)[@](bold)";
     };
     hostname = {
@@ -63,7 +64,8 @@
     };
     time = {
       disabled = false;
-
+      
+      style = "bold green";
       format = "[$time]($style)";
     };
   };

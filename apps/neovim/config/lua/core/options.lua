@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+---@param spaces int
 local set_tab_size = function(spaces)
   opt.tabstop = spaces
   opt.shiftwidth = spaces
@@ -14,7 +15,7 @@ set_tab_size(4)
 
 -- set 2 spaces tabs in files with this extensions
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"lua", "nix"},
+  pattern = {"lua", "nix", "yaml", "toml", "xml", "html", "css"},
   callback = function() set_tab_size(2) end
 })
 
@@ -36,6 +37,7 @@ opt.splitbelow = true
 
 -- number lines
 opt.number = true
+opt.relativenumber = true
 
 -- consider string-string as whole word
 opt.iskeyword:append("-")
